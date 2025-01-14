@@ -1,0 +1,100 @@
+/* Resetting default styles */
+body, h1, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'gothic';
+	src: local('gothic'), url('Imgs/Frontpage/gothic.woff') format('woff');
+}
+
+body {
+    font-family: 'gothic';
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: .5;
+}
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1em 0;
+    letter-spacing: .4em;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+main {
+    flex: 1;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.image-item {
+    max-width: 350px;
+    background-color: #ffffff;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-item .img-title {
+    padding-top: 1em;
+    color: rgb(0, 0, 0);
+    font-family: 'gothic';
+    font-size: .75em;
+    letter-spacing: .2em;
+    font-weight: thin;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
